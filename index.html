@@ -12,38 +12,46 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>Conversor de Moedas</header>
-        <form action="#">
-            <div class="amount">
-                <p>Insira o valor:</p>
-                <input type="text" value="1">
-            </div>
-            <div class="drop-list">
-                <div class="from">
-                    <p>De</p>
-                    <div class="select-box">
-                        <img src="https://flagcdn.com/48x36/us.png" alt="flag">
-                        <select></select>
+    <section>
+        <div class="wrapper">
+            <header>Conversor de Moedas</header>
+            <form action="#">
+                <div class="amount">
+                    <p>Insira o valor:</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="drop-list">
+                    <div class="from">
+                        <p>De</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                            <select></select>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img class="icon-setas" src="public/icons/right-left-solid.svg" alt="Inverter seleções" />
+                    </div>
+                    <div class="to">
+                        <p>Para</p>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/br.png" alt="flag">
+                            <select></select>
+                        </div>
                     </div>
                 </div>
-                <div class="icon"><i class="fa-solid fa-right-left"></i></div>
-                <div class="to">
-                    <p>Para</p>
-                    <div class="select-box">
-                        <img src="https://flagcdn.com/48x36/br.png" alt="flag">
-                        <select></select>
-                    </div>
-                </div>
-            </div>
-            <div class="exchange-rate">Obtendo taxa de câmbio...</div>
-            <button>Obter taxa de câmbio</button>
-        </form>
-    </div>
+                <div class="exchange-rate">Obtendo taxa de câmbio...</div>
+                <button>Obter taxa de câmbio</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Frederico Nogueira | <b>Conversor de Moedas</b> &copy; 2023<br />
+            Este é um projeto educacional</p>
+    </footer>
 
     <script src="./js/countryList.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
 
-</html> 
+</html>

@@ -1,120 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root{
-    --bgColor: #6f0303;
-    --bgHover: #530000;
-    --btColor: rgb(225, 225, 225);
-    --borderColor: rgb(207, 205, 205);
+:root {
+  --bgColor: rgb(52, 13, 123);
+  --bgHover: rgb(42, 8, 69);
+  --btColor: rgb(225, 225, 225);
+  --borderColor: rgb(207, 205, 205);
+  --linear-bg: linear-gradient(to right, rgb(100, 65, 165), rgb(42, 8, 69));
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
 }
 
-body{
-    display:flex;
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--linear-bg);
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+::selection {
+  color: var(--btColor);
+  background: var(--bgColor);
+}
+
+.wrapper {
+  width: 25em;
+  padding: 2em;
+  border-radius: 10px;
+  background: var(--btColor);
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input {
+  height: 40px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid var(--borderColor);
+}
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid var(--bgColor);
+}
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid var(--borderColor);
+  cursor: pointer;
+}
+.select-box img {
+  max-width: 1.5em;
+  cursor: pointer;
+
+}
+.select-box select {
+  width: auto;
+  font-size: 1em;
+  background: none;
+  margin: 0 -5px 0 5px;
+  cursor: pointer;
+
+}
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track {
+  background: var(--btColor);
+}
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 2em;
+}
+.icon-setas {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button {
+  height: 50px;
+  color: var(--btColor);
+  font-size: 17px;
+  cursor: pointer;
+  background: var(--bgColor);
+  transition: 0.15s ease;
+}
+form button:hover {
+  background: var(--bgHover);
+}
+
+footer {
+    height: 4.3em;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 0 10px;
-    background: var(--bgColor);
+    background-color: #0004;
+    color: white;
+    font-weight: 200;
+    font-size: 1em;
+
 }
-::selection{
-    color:var(--btColor);
-    background:var(--bgColor);
-}
-.wrapper{
-    width: 370px;
-    padding: 30px;
-    border-radius: 7px;
-    background: var(--btColor);
-    box-shadow: 7px 7px 20px rgba(0,0,0, 0.05);
-}
-.wrapper header{
-    font-size:24px;
-    font-weight:500;
+footer p{
     text-align: center;
 }
-.wrapper form{
-    margin: 40px 0 20px 0;
-}
-form :where(input, select, button){
-    width: 100%;
-    outline:none;
-    border-radius: 5px;
-    border:none;
-}
-form p{
-    font-size:18px;
-    margin-bottom: 5px;
-}
-form input{
-    height:40px;
-    font-size:17px;
-    padding: 0 15px;
-    border: 1px solid var(--borderColor);
-}
-form input:focus{
-    padding: 0 14px;
-    border: 2px solid var(--bgColor);
-}
-form .drop-list{
-    display:flex;
-    margin-top:20px;
-    align-items: center;
-    justify-content: space-between;
-}
-.drop-list .select-box{
-    display: flex;
-    width:115px;
-    height: 45px;
-    align-items: center;
-    border-radius: 5px;
-    justify-content: center;
-    border: 1px solid var(--borderColor);
-}
-.select-box img{
-    max-width: 21px;
-}
-.select-box select{
-    width:auto;
-    font-size:16px;
-    background: none;
-    margin: 0 -5px 0 5px;
-    
-}
-.select-box select::-webkit-scrollbar{
-    width: 8px;
-}
-.select-box select::-webkit-scrollbar-track{
-    background: var(--btColor);
-}
-.select-box select::-webkit-scrollbar-thumb{
-    background: #888;
-    border-radius:8px;
-    border-right:2px solid #fff;
-}
-.drop-list.icon{
-    cursor:pointer;
-    margin-top:30px;
-    font-size: 22px;
-}
-form .exchange-rate{
-    font-size:17px;
-    margin:20px 0 30px;
-}
-form button{
-    height:50px;
-    color: var(--btColor);
-    font-size: 17px;
-    cursor: pointer;
-    background: var(--bgColor);
-    transition: 0.3s ease;
-}
-form button:hover{
-    background: var(--bgHover) ;
-} 

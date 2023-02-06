@@ -61,3 +61,7 @@ let exchangeRate = result.conversion_rates[toCurrency.value];
     exchangeRateTxt.innerText = "Algo está errado";
 });
 }
+
+function capturaSelect() {
+    console.log(fromCurrency)
+}
