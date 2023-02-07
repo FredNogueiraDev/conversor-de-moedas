@@ -1,19 +1,42 @@
 # Conversor de Moedas
+![Badge Projeto finalizado](http://img.shields.io/static/v1?label=STATUS&message=Finalizado&color=GREEN&style=for-the-badge)
 
 ---
 
-## **O que é um Conversor de Moedas?**
+## Sobre
 
-Um conversor de moedas expressa os dados em moedas internacionais, retornando a diferença de valor correspondente entre as moedas selecionadas pelo usuário, por exemplo, a cotação do doalar é R$5,00, e eu preciso saber o valor de U$50 basta multiplicar:
+Projeto desenvolvido para exercitar meus conhecimentos em **HTML, CSS e JavaScript** para isso, foi implementado um conversor de moedas online e atualizado em tempo real por meio de uma API.
 
-R$5,00 x 50 = R$**250**. Portanto, um produto de 50 dólares custa no Brasil **250** reais, esse é o valor do câmbio. Esse mesmo cálculo pode ser feito em qualquer outra moeda, inclusive o preço do ouro e do Bitcoin.
+## ****O que é um Conversor de Moedas?****
+
+Um conversor de moedas expressa os dados em moedas internacionais, retornando a diferença de valor correspondente entre as moedas selecionadas pelo usuário.
 
 Os valores são atualizados ao vivo por meio da API da Exchange Rate, o mesmo consegue converter mais de 150 moedas e está a mais de 10 anos no mercado.
 
+## Como usar:
+
+Para utilizar o conversor de moedas, escolha as siglas das moedas que você deseja converter, a bandeira aparecerá para te auxiliar e a conversão será feita automáticamente.
+
+## Instalação
+
+1. Instalação do projeto:
+    
+    ```c
+    git clone https://github.com/FredNogueiraDev/conversor-de-moedas.git
+    ```
+    
+## Imagens
+
+![conversor](https://user-images.githubusercontent.com/102488476/217220755-172bb79b-de5c-48b2-a515-642c0273ce1c.png)
+
+## Navegar no projeto
+
+[Clique aqui e navegue no projeto!](https://frednogueiradev.github.io/conversor-de-moedas/)
+
+- **Este é um projeto educacional!**
+
 ---
 
-## **Como utilizar o Conversor de Moedas**
-
-Para utilizar o conversor de moedas, digite nos respetivos campos as siglas das moedas que você deseja converter, aparecerá a bandeira do país correspondente para você ter certeza, são mais de 30 opções de moedas diferentes para se converter.
-
-![Imagem do conversor de Moedas](https://user-images.githubusercontent.com/102488476/195400794-26acf82b-ee37-4b28-9d74-eb486b0b0f44.png)
+## Autor
+| [<img src="https://avatars.githubusercontent.com/u/102488476?v=4" width=115><br><sub>Frederico Nogueira</sub>](https://www.linkedin.com/in/frederico-nogueira-654924238/) | 
+| :---: |
